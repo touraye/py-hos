@@ -1,0 +1,9 @@
+### Delete Doctor
+DELETE HTTP://localhost:8000/api/doctors//
+
+
+### Delete Patient
+DELETE  HTTP://localhost:8000/api/patients//
+
+#### Delete Appointment 
+DELETE HTTP://localhost:8000/api/appointments//

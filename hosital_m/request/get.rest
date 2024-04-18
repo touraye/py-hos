@@ -1,0 +1,10 @@
+### GET Docotors
+GET HTTP://localhost:8000/api/doctors
+
+### GET Patients
+GET HTTP://localhost:8000/api/patients
+
+
+### GET Appointments
+GET HTTP://localhost:8000/api/appointments
+

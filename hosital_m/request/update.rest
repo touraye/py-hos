@@ -1,0 +1,24 @@
+### UPDATE Doctor
+PATCH HTTP://localhost:8000/api/doctors/1/
+Content-Type: application/json
+
+ {
+    "specialty": "therapize"
+ }
+
+### UPDATE patient
+PATCH  HTTP://localhost:8000/api/patients/1/
+Content-Type: application/json
+
+ {
+    "allergies": "Patient has low BP"
+ }
+
+### UPDATE Appiontment
+
+PATCH HTTP://localhost:8000/api/appointments/2/
+Content-Type: application/json
+
+ {
+    "notes": "Pateint was late for the appointment"
+ }

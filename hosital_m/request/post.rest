@@ -1,0 +1,37 @@
+### POST Doctors
+POST HTTP://localhost:8000/api/doctors/
+Content-Type: application/json
+
+{
+    "name": "Alieu Touray",
+    "email": "aliue@gmail.com",
+    "phone": "+220 5993453",
+    "supervisor": "malick",
+    "specialty": "pharmasis"
+}
+
+
+### POST Patients
+POST HTTP://localhost:8000/api/patients/
+Content-Type: application/json
+
+{
+    "name": "Buba bah",
+    "email": "bob@gmail.com",
+    "phone": "+220 9873943",
+    "address": "Sanyang",
+    "allergies": "stomach issue with fiver"
+}
+
+
+### POST Appointment
+
+POST HTTP://localhost:8000/api/appointments/
+Content-Type: application/json
+
+{
+    "appointed_id": "a3",
+    "medicine": "p-tap v-x troch",
+    "doctor_id": "2",
+    "patient_id": "1"
+}
