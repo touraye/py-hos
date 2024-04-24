@@ -13,8 +13,8 @@ class DoctorAdmin(admin.ModelAdmin):
         ("Created Date", {"fields": ["created_at"]}),
         ] 
     
-    list_display = ["name", "phone", "email", "supervisor", "specialty", "created_at"]
-    list_filter = ["created_at"]
+    list_display = ["name", "phone", "email", "supervisor", "specialty", "created_at"]    
+    list_filter = ["created_at", "specialty"]
     search_fields = ["name"]
     
 
@@ -28,7 +28,7 @@ class PatientAdmin(admin.ModelAdmin):
     ]
     
     list_display = ["id", "name", "email", "address", "admitted_date", "allergies"]   
-    list_filter = ["admitted_date"]
+    list_filter = ["admitted_date", "address"]
     search_fields = ["name"]
     
     
@@ -44,7 +44,7 @@ class AppointmentAdmin(admin.ModelAdmin):
         
     ]
     list_display = ["id", "appointed_id", "blood_pressure", "notes", "medicine", "doctor_id", "patient_id"]
-    list_filter = ["doctor_id"]
+    list_filter = ["doctor_id", "medicine"]
     search_fields = ["patient_id"]
     
     
