@@ -1,5 +1,13 @@
 from rest_framework import serializers
 from hospital.models import Doctor, Patient, Appointment
+from django.contrib.auth.models import User
+
+
+# create a user serializer
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User 
+        fields = '__all__'
 
 # create a doctor serializer
 class DoctorSerializer(serializers.ModelSerializer):
