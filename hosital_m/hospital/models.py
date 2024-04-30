@@ -35,7 +35,7 @@ class Appointment(models.Model):
     appointed_id = models.CharField(max_length=10, unique=True) # unique
     blood_pressure = models.IntegerField(default=0)
     notes = models.CharField(max_length=250, blank=True)
-    medicine = models.CharField(max_length=100)
+    medicine = models.CharField(max_length=100, blank=True)
     doctor_id = models.ForeignKey(Doctor, on_delete=models.CASCADE)
     patient_id = models.ForeignKey(Patient, on_delete=models.CASCADE) 
     created_by = models.ForeignKey(User, related_name='appointment_user', on_delete=models.CASCADE, null=True)
